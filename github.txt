@@ -40,7 +40,7 @@ $ git config --global user.email 419lu723138@gmail.com
    git remote add <shortname> <url>   git remote Crawl https://github.com/lujun419/Crawl.git   其中Crawl表示的是shortname
 
 从远程仓库中抓取与拉取
-  git fetch [remote-name]
+  git pull origin master
 
 推送到远程仓库
   git push [remote-name] [branch-name]

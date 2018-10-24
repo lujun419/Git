@@ -1,0 +1,58 @@
+git中文手册：
+https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93
+用户信息:
+$ git config --global user.name "lujun419"
+$ git config --global user.email 419lu723138@gmail.com
+
+查询用户名和账号 
+  git config user.name/user.email
+
+初始化仓库：
+  git init
+  git add *  添加所有的文件到仓库
+  git filename  添加指定的文件到仓库
+  git commit -m "commit message"  第一次提交信息
+
+忽略文件
+  创建.gitignore 文件就可以  文件中添加相应的内容  见手册
+
+查看变化的内容
+  git diff
+
+提交更新
+  git commit  
+  git commit -a  提交所有跟踪过的更新
+
+移除文件
+  git rm filename
+移动文件
+  git mv file_from file_to
+撤销操作
+  git commit --amend
+  git reset HEAD filename 撤销指定的暂存文件
+  git checkout -- filename 撤销对文件的修改
+  git checkout 远程分支  -b  本地分支  远程分支查看 git branch -a
+
+切换分支
+  git checkout 远程分支
+
+添加远程仓库
+   git remote add <shortname> <url>   git remote Crawl https://github.com/lujun419/Crawl.git   其中Crawl表示的是shortname
+
+从远程仓库中抓取与拉取
+  git fetch [remote-name]
+
+推送到远程仓库
+  git push [remote-name] [branch-name]
+  git push Crawl master
+  git push Crawl master:Crawl  
+
+远程仓库的移除与重命名
+  git remote rename Crawl Paul
+  git remote rm paul
+
+打标签
+  git tag
+
+git 别名
+  git config --global alias.co checkout 使用git co  其实就是使用git checkout

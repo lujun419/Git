@@ -33,14 +33,21 @@ $ git config --global user.email 419lu723138@gmail.com
   git checkout -- filename 撤销对文件的修改
   git checkout 远程分支  -b  本地分支  远程分支查看 git branch -a
 
-切换分支
-  git checkout 远程分支
 
 添加远程仓库
    git remote add <shortname> <url>   git remote Crawl https://github.com/lujun419/Crawl.git   其中Crawl表示的是shortname
 
+
 从远程仓库中抓取与拉取
   git pull origin master
+从远程仓库拉取指定版本的代码
+  git checkout 指定的版本号  3002b2a5330210ecbe504f75582b82f4d38c2215
+指定的版本号查看
+  git log
+查看所有的分支
+  git branch -a
+切换分支
+  git ckeckout 分支名
 
 推送到远程仓库
   git push [remote-name] [branch-name]

@@ -1,65 +1,67 @@
-gitÖĞÎÄÊÖ²á£º
+gitä¸­æ–‡æ‰‹å†Œï¼š
 https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93
-ÓÃ»§ĞÅÏ¢:
+ç”¨æˆ·ä¿¡æ¯:
 $ git config --global user.name "lujun419"
 $ git config --global user.email 419lu723138@gmail.com
 
-²éÑ¯ÓÃ»§ÃûºÍÕËºÅ 
+æŸ¥è¯¢ç”¨æˆ·åå’Œè´¦å· 
   git config user.name/user.email
 
-³õÊ¼»¯²Ö¿â£º
+åˆå§‹åŒ–ä»“åº“ï¼š
   git init
-  git add *  Ìí¼ÓËùÓĞµÄÎÄ¼şµ½²Ö¿â
-  git filename  Ìí¼ÓÖ¸¶¨µÄÎÄ¼şµ½²Ö¿â
-  git commit -m "commit message"  µÚÒ»´ÎÌá½»ĞÅÏ¢
+  git add *  æ·»åŠ æ‰€æœ‰çš„æ–‡ä»¶åˆ°ä»“åº“
+  git filename  æ·»åŠ æŒ‡å®šçš„æ–‡ä»¶åˆ°ä»“åº“
+  git commit -m "commit message"  ç¬¬ä¸€æ¬¡æäº¤ä¿¡æ¯
 
-ºöÂÔÎÄ¼ş
-  ´´½¨.gitignore ÎÄ¼ş¾Í¿ÉÒÔ  ÎÄ¼şÖĞÌí¼ÓÏàÓ¦µÄÄÚÈİ  ¼ûÊÖ²á
+å¿½ç•¥æ–‡ä»¶
+  åˆ›å»º.gitignore æ–‡ä»¶å°±å¯ä»¥  æ–‡ä»¶ä¸­æ·»åŠ ç›¸åº”çš„å†…å®¹  è§æ‰‹å†Œ
 
-²é¿´±ä»¯µÄÄÚÈİ
+æŸ¥çœ‹å˜åŒ–çš„å†…å®¹
   git diff
 
-Ìá½»¸üĞÂ
+æäº¤æ›´æ–°
   git commit  
-  git commit -a  Ìá½»ËùÓĞ¸ú×Ù¹ıµÄ¸üĞÂ
+  git commit -a  æäº¤æ‰€æœ‰è·Ÿè¸ªè¿‡çš„æ›´æ–°
 
-ÒÆ³ıÎÄ¼ş
+ç§»é™¤æ–‡ä»¶
   git rm filename
-ÒÆ¶¯ÎÄ¼ş
+ç§»åŠ¨æ–‡ä»¶
   git mv file_from file_to
-³·Ïú²Ù×÷
+æ’¤é”€æ“ä½œ
   git commit --amend
-  git reset HEAD filename ³·ÏúÖ¸¶¨µÄÔİ´æÎÄ¼ş
-  git checkout -- filename ³·Ïú¶ÔÎÄ¼şµÄĞŞ¸Ä
-  git checkout Ô¶³Ì·ÖÖ§  -b  ±¾µØ·ÖÖ§  Ô¶³Ì·ÖÖ§²é¿´ git branch -a
+  git reset HEAD filename æ’¤é”€æŒ‡å®šçš„æš‚å­˜æ–‡ä»¶
+  git checkout -- filename æ’¤é”€å¯¹æ–‡ä»¶çš„ä¿®æ”¹
+  git checkout è¿œç¨‹åˆ†æ”¯  -b  æœ¬åœ°åˆ†æ”¯  è¿œç¨‹åˆ†æ”¯æŸ¥çœ‹ git branch -a
 
 
-Ìí¼ÓÔ¶³Ì²Ö¿â
-   git remote add <shortname> <url>   git remote Crawl https://github.com/lujun419/Crawl.git   ÆäÖĞCrawl±íÊ¾µÄÊÇshortname
+æ·»åŠ è¿œç¨‹ä»“åº“
+   git remote add <shortname> <url>   git remote Crawl https://github.com/lujun419/Crawl.git   å…¶ä¸­Crawlè¡¨ç¤ºçš„æ˜¯shortname
 
 
-´ÓÔ¶³Ì²Ö¿âÖĞ×¥È¡ÓëÀ­È¡
+ä»è¿œç¨‹ä»“åº“ä¸­æŠ“å–ä¸æ‹‰å–
   git pull origin master
-´ÓÔ¶³Ì²Ö¿âÀ­È¡Ö¸¶¨°æ±¾µÄ´úÂë
-  git checkout Ö¸¶¨µÄ°æ±¾ºÅ  3002b2a5330210ecbe504f75582b82f4d38c2215
-Ö¸¶¨µÄ°æ±¾ºÅ²é¿´
+ä»è¿œç¨‹ä»“åº“æ‹‰å–æŒ‡å®šç‰ˆæœ¬çš„ä»£ç 
+  git checkout æŒ‡å®šçš„ç‰ˆæœ¬å·  3002b2a5330210ecbe504f75582b82f4d38c2215
+æŒ‡å®šçš„ç‰ˆæœ¬å·æŸ¥çœ‹
   git log
-²é¿´ËùÓĞµÄ·ÖÖ§
+æŸ¥çœ‹æ‰€æœ‰çš„åˆ†æ”¯
   git branch -a
-ÇĞ»»·ÖÖ§
-  git ckeckout ·ÖÖ§Ãû
+åˆ‡æ¢åˆ†æ”¯
+  git ckeckout åˆ†æ”¯å
 
-ÍÆËÍµ½Ô¶³Ì²Ö¿â
+æ¨é€åˆ°è¿œç¨‹ä»“åº“
   git push [remote-name] [branch-name]
   git push Crawl master
   git push Crawl master:Crawl  
 
-Ô¶³Ì²Ö¿âµÄÒÆ³ıÓëÖØÃüÃû
+è¿œç¨‹ä»“åº“çš„ç§»é™¤ä¸é‡å‘½å
   git remote rename Crawl Paul
   git remote rm paul
 
-´ò±êÇ©
+æ‰“æ ‡ç­¾
   git tag
 
-git ±ğÃû
-  git config --global alias.co checkout Ê¹ÓÃgit co  ÆäÊµ¾ÍÊÇÊ¹ÓÃgit checkout
+git åˆ«å
+  git config --global alias.co checkout ä½¿ç”¨git co  å…¶å®å°±æ˜¯ä½¿ç”¨git checkout
+  
+å„ç§ç‰ˆæœ¬gitignoreï¼šhttps://github.com/github/gitignore 
